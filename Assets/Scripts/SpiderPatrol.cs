@@ -20,6 +20,7 @@ public class SpiderPatrol : MonoBehaviour
 
     void Update()
     {
+        //TODO: avoid spiders move through each other
         animator.SetFloat("Speed", agent.velocity.magnitude);
 
         if (!agent.pathPending&& agent.remainingDistance <= agent.stoppingDistance)
