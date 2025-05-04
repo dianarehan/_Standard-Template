@@ -8,16 +8,20 @@ public class SpiderPatrol : MonoBehaviour
     private NavMeshAgent agent;
     private Vector3 startPosition;
     private float waitTimer;
+    private Animator animator;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         startPosition = transform.position;
         GoToNewPoint();
     }
 
     void Update()
     {
+        animator.SetFloat("Speed", agent.velocity.magnitude);
+
         if (!agent.pathPending&& agent.remainingDistance <= agent.stoppingDistance)
         {
             waitTimer+= Time.deltaTime;
