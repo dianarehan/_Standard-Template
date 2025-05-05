@@ -18,8 +18,6 @@ public class SpiderPatrol : MonoBehaviour
 
     void Update()
     {
-        //TODO: avoid spiders move through each other
-
         if (!agent.pathPending&& agent.remainingDistance <= agent.stoppingDistance)
         {
             waitTimer+= Time.deltaTime;

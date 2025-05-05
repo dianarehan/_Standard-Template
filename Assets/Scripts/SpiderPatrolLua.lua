@@ -1,10 +1,12 @@
 local UnityEngine = CS.UnityEngine
+local Vector3 = UnityEngine.Vector3
+
 
 -- Configuration variables
 local patrolPoints = {}  -- Table to hold Vector3 positions
 local waitTime = 2.0  -- Time to wait at each point
 local numPoints = 12  -- Number of patrol points
-local range = 1 -- Max absolute value for position
+local range = 15  -- Max absolute value for position
 
 -- Internal state variables
 local agent = nil
@@ -16,11 +18,13 @@ function start()
     agent.stoppingDistance = 0.5
     agent.speed = 3.5
 
-    -- Generate random patrol points
+    local center = UnityEngine.Vector3(-1.644, -9.367, 17.037)
+
     for i = 1, numPoints do
-        local x = math.random(-range, range)
-        local z = math.random(-range, range)
-        table.insert(patrolPoints, UnityEngine.Vector3(x, 0, z))
+        local x = center.x + math.random(-range, range)
+        local z = center.z + math.random(-range, range)
+        local y = center.y  -- or sample NavMesh height if needed
+        table.insert(patrolPoints, UnityEngine.Vector3(x, y, z))
     end
 
     -- Start patrolling by going to a random point
