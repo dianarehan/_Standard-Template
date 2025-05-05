@@ -109,6 +109,15 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(UnityEngine.MeshCollider), UnityEngineMeshColliderWrap.__Register);
         
         
+            translator.DelayWrapLoader(typeof(UnityEngine.Physics), UnityEnginePhysicsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(UnityEngine.LayerMask), UnityEngineLayerMaskWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(UnityEngine.ConfigurableJoint), UnityEngineConfigurableJointWrap.__Register);
+        
+        
             translator.DelayWrapLoader(typeof(UnityEngine.Material), UnityEngineMaterialWrap.__Register);
         
         
@@ -165,6 +174,10 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.Button), UnityEngineUIButtonWrap.__Register);
         
+        }
+        
+        static void wrapInit1(LuaEnv luaenv, ObjectTranslator translator)
+        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.Slider), UnityEngineUISliderWrap.__Register);
         
@@ -174,10 +187,6 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.Sprite), UnityEngineSpriteWrap.__Register);
         
-        }
-        
-        static void wrapInit1(LuaEnv luaenv, ObjectTranslator translator)
-        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.Mathf), UnityEngineMathfWrap.__Register);
         
@@ -322,6 +331,10 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.Interactors.NearFarInteractor), UnityEngineXRInteractionToolkitInteractorsNearFarInteractorWrap.__Register);
         
+        }
+        
+        static void wrapInit2(LuaEnv luaenv, ObjectTranslator translator)
+        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.Filtering.PokeThresholdData), UnityEngineXRInteractionToolkitFilteringPokeThresholdDataWrap.__Register);
         
@@ -331,10 +344,6 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.Filtering.PokeThresholdDatumProperty), UnityEngineXRInteractionToolkitFilteringPokeThresholdDatumPropertyWrap.__Register);
         
-        }
-        
-        static void wrapInit2(LuaEnv luaenv, ObjectTranslator translator)
-        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs), UnityEngineXRInteractionToolkitSelectEnterEventArgsWrap.__Register);
         
@@ -479,6 +488,10 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.TwoHandedGrabMoveProvider), UnityEngineXRInteractionToolkitLocomotionMovementTwoHandedGrabMoveProviderWrap.__Register);
         
+        }
+        
+        static void wrapInit3(LuaEnv luaenv, ObjectTranslator translator)
+        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.Locomotion.UnderCameraBodyPositionEvaluator), UnityEngineXRInteractionToolkitLocomotionUnderCameraBodyPositionEvaluatorWrap.__Register);
         
@@ -488,10 +501,6 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.Locomotion.XRBodyScale), UnityEngineXRInteractionToolkitLocomotionXRBodyScaleWrap.__Register);
         
-        }
-        
-        static void wrapInit3(LuaEnv luaenv, ObjectTranslator translator)
-        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.XR.Interaction.Toolkit.Locomotion.XRBodyTransformer), UnityEngineXRInteractionToolkitLocomotionXRBodyTransformerWrap.__Register);
         

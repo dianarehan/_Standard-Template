@@ -29,8 +29,9 @@ namespace ImmerzaSDK.Lua
         private Action luaStart;
         private Action luaOnEnable;
         private Action luaOnDisable;
-        private Action luaUpdate;
         private Action luaOnDestroy;
+        private Action luaUpdate;
+        private Action luaFixedUpdate;
 
         // Physics
         private Action<Collision> luaOnCollisionEnter;
@@ -81,8 +82,9 @@ namespace ImmerzaSDK.Lua
             scriptEnv.Get("start", out luaStart);
             scriptEnv.Get("on_enable", out luaOnEnable);
             scriptEnv.Get("on_disable", out luaOnDisable);
-            scriptEnv.Get("update", out luaUpdate);
             scriptEnv.Get("on_destroy", out luaOnDestroy);
+            scriptEnv.Get("update", out luaUpdate);
+            scriptEnv.Get("fixed_update", out luaFixedUpdate);
 
             scriptEnv.Get("on_collision_enter", out luaOnCollisionEnter);
             scriptEnv.Get("on_collision_stay", out luaOnCollisionStay);
@@ -126,15 +128,21 @@ namespace ImmerzaSDK.Lua
             luaOnDisable?.Invoke();
         }
 
+        private void OnDestroy()
+        {
+            luaOnDestroy?.Invoke();
+            luaUpdate = null;
+            luaFixedUpdate = null;
+        }
+
         private void Update()
         {
             luaUpdate?.Invoke();
         }
 
-        private void OnDestroy()
+        private void FixedUpdate()
         {
-            luaOnDestroy?.Invoke();
-            luaUpdate = null;
+            luaFixedUpdate?.Invoke();
         }
 
         private void OnCollisionEnter(Collision collision)

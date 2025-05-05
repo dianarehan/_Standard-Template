@@ -14,7 +14,7 @@ namespace ImmerzaSDK
         private InputDevice rightHandDevice;
 
         // Events Actions for Observations
-         public static event Action ExhaleStarted;
+        public static event Action ExhaleStarted;
         public static event Action ExhaleFinished;
         public static event Action<string, float, float, float> RespiratoryRatePost;
 
