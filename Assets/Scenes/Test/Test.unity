@@ -2602,6 +2602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spider (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3299,6 +3303,10 @@ PrefabInstance:
     - target: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
       propertyPath: m_Name
       value: spider (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6896,7 +6904,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.36144, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1549504055}
   - {fileID: 107581127}
@@ -8084,6 +8092,10 @@ PrefabInstance:
     - target: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
       propertyPath: m_Name
       value: spider (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10081,6 +10093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spider (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10173,9 +10189,9 @@ Transform:
   m_GameObject: {fileID: 2059629413}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -26.77}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: -6.9, z: -26.77}
+  m_LocalScale: {x: 10.37, y: 10.37, z: 10.37}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1211114243}
   m_Father: {fileID: 0}
@@ -11055,14 +11071,17 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3736395176860529379}
+      addedObject: {fileID: 3736395176860529381}
+    - targetCorrespondingSourceObject: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3736395176860529380}
   m_SourcePrefab: {fileID: 100100000, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
 --- !u!1 &3736395176860529378 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7310102889092132829, guid: ff9571db4fe2ba24aacebcca9a7effc8, type: 3}
   m_PrefabInstance: {fileID: 3736395176860529377}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3736395176860529379
+--- !u!114 &3736395176860529380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11074,7 +11093,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2079d26ed1b136d429eb101f9a2ef439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainLuaScript: {fileID: -2162733336936698388, guid: 37288047d81d4b04292eccb866928a6e, type: 3}
+  mainLuaScript: {fileID: 7262842099423497061, guid: 6d42b3a392d7b804ea67ad4863995149, type: 3}
+  additionalLuaScripts: []
+  references: []
+--- !u!114 &3736395176860529381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736395176860529378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2079d26ed1b136d429eb101f9a2ef439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainLuaScript: {fileID: -7638030151123620797, guid: 305ef1ce16024f8478e16d3d42eabff1, type: 3}
   additionalLuaScripts: []
   references: []
 --- !u!1660057539 &9223372036854775807
