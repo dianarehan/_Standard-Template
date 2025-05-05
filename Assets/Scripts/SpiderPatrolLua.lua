@@ -4,7 +4,7 @@ local UnityEngine = CS.UnityEngine
 local patrolPoints = {}  -- Table to hold Vector3 positions
 local waitTime = 2.0  -- Time to wait at each point
 local numPoints = 12  -- Number of patrol points
-local range = 15  -- Max absolute value for position
+local range = 1 -- Max absolute value for position
 
 -- Internal state variables
 local agent = nil
