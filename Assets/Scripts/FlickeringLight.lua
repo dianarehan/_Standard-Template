@@ -4,7 +4,7 @@ local Random = UnityEngine.Random
 local Time = UnityEngine.Time
 
 local minIntensity = 0.5
-local maxIntensity = 1.5
+local maxIntensity = 4.0
 local minInterval = 4.0
 local maxInterval = 8.0
 
