@@ -228,9 +228,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1680490742}
   m_SourcePrefab: {fileID: 100100000, guid: 924cfa5ddec9f4b4e93fb6223bf69eb9, type: 3}
---- !u!4 &835921143 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3384730787823064033, guid: 924cfa5ddec9f4b4e93fb6223bf69eb9, type: 3}
+--- !u!1 &835921142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4321627145623478215, guid: 924cfa5ddec9f4b4e93fb6223bf69eb9, type: 3}
   m_PrefabInstance: {fileID: 835921141}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &906400270
@@ -453,6 +453,50 @@ CapsuleCollider:
   m_Height: 1.2595272
   m_Direction: 1
   m_Center: {x: 0, y: -0.33702755, z: -0.12418461}
+--- !u!1 &1731566237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1731566239}
+  - component: {fileID: 1731566238}
+  m_Layer: 0
+  m_Name: LuaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1731566238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731566237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7687386e322ab0646a6d1171d1fa1e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1731566239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731566237}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4165945, y: -2.2321262, z: 0.42886162}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1732375378
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,12 +845,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2019704949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc3d023cb4b611449465c77b728fca7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2079d26ed1b136d429eb101f9a2ef439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrOrigin: {fileID: 835921143}
-  fallDistance: 20
-  fallDuration: 2
+  mainLuaScript: {fileID: -6524955064942638309, guid: 4c509d50d55f3b3459303defc4273fcf, type: 3}
+  additionalLuaScripts: []
+  references:
+  - variableName: xrOrigin
+    value: {fileID: 835921142}
+  - variableName: triggerObject
+    value: {fileID: 2019704949}
 --- !u!1 &2096226513
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,3 +975,4 @@ SceneRoots:
   - {fileID: 906400274}
   - {fileID: 2096226517}
   - {fileID: 2019704953}
+  - {fileID: 1731566239}
