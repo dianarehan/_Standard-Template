@@ -394,8 +394,8 @@ GameObject:
   - component: {fileID: 20047888}
   - component: {fileID: 20047887}
   - component: {fileID: 20047886}
-  - component: {fileID: 20047889}
   - component: {fileID: 20047890}
+  - component: {fileID: 20047891}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -506,24 +506,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20047889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20047885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e31ec1d0f3c87849beba0c0df09f58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minIntensity: 0.5
-  maxIntensity: 1.5
-  flickerSpeed: 0.1
-  minInterval: 4
-  maxInterval: 8
-  flickerSound: {fileID: 8300000, guid: 0e8dff44f5027cb48b57ddd60e1c14a3, type: 3}
 --- !u!82 &20047890
 AudioSource:
   m_ObjectHideFlags: 0
@@ -581,7 +563,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.36
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -621,6 +603,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &20047891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20047885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2079d26ed1b136d429eb101f9a2ef439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainLuaScript: {fileID: -5560406892044950085, guid: a43c6b59f161fc841b2798f1e1f305da, type: 3}
+  additionalLuaScripts: []
+  references:
+  - variableName: flickerSound
+    value: {fileID: 8300000, guid: 0e8dff44f5027cb48b57ddd60e1c14a3, type: 3}
 --- !u!1001 &20316171
 PrefabInstance:
   m_ObjectHideFlags: 0

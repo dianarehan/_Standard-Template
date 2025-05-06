@@ -2,7 +2,6 @@ local CS = CS
 local UnityEngine = CS.UnityEngine
 local Vector3 = UnityEngine.Vector3
 local Time = UnityEngine.Time
-local coroutine = coroutine
 
 local isFalling = false
 local fallDistance = 20

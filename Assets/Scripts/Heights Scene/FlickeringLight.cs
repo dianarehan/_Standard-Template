@@ -4,7 +4,6 @@ public class FlickeringLight : MonoBehaviour
 {
     [SerializeField] private float minIntensity = 0.5f;
     [SerializeField] private float maxIntensity = 1.5f;
-    [SerializeField] private float flickerSpeed = 0.1f;
     [SerializeField] private float minInterval = 4f;
     [SerializeField] private float maxInterval = 8f;
     [SerializeField] private AudioClip flickerSound;
