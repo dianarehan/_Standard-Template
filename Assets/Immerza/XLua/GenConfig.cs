@@ -19,6 +19,7 @@ using UnityEngine.InputSystem;
 using ImmerzaSDK.Lua;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public static class GenConfig
 {
@@ -83,7 +84,22 @@ public static class GenConfig
                 typeof(Action<string>),
                 typeof(Action),
                 typeof(UnityEngine.Debug),
-                typeof(LuaAsset)
+                typeof(LuaAsset),
+
+                // Navigation
+
+                typeof(NavMesh),
+                typeof(NavMeshAgent),
+                typeof(NavMeshObstacle),
+                typeof(NavMeshPath),
+                typeof(NavMeshHit),
+                typeof(NavMeshData),
+                typeof(NavMeshDataInstance),
+                typeof(NavMeshLinkData),
+                typeof(NavMeshLinkInstance),
+                typeof(NavMeshBuildSettings),
+                typeof(NavMeshBuildSource),
+                typeof(NavMeshBuildMarkup),
             };
 
     [CSharpCallLua]
