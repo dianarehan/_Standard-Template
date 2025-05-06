@@ -117,6 +117,22 @@
 		
 	</assembly>
 
+	<assembly fullname="UnityEngine.AIModule">
+	    <type fullname="UnityEngine.AI.NavMesh" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshAgent" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshObstacle" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshPath" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshHit" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshData" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshDataInstance" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshLinkData" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshLinkInstance" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshBuildSettings" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshBuildSource" preserve="all"/>
+		<type fullname="UnityEngine.AI.NavMeshBuildMarkup" preserve="all"/>
+		
+	</assembly>
+
 	<assembly fullname="Unity.XR.Interaction.Toolkit">
 	    <type fullname="UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleAudioFeedback" preserve="all"/>
 		<type fullname="UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleHapticFeedback" preserve="all"/>
