@@ -1,0 +1,10 @@
+# ninja log v5
+31	1804	7682682031733586	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	fbc58019a40a9aa7
+0	1870	7682682032478008	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b1b0dc7611f7a52d
+38	1878	7682682032534292	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	8640559fcab1757c
+19	1954	7682682033346609	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	824e170bc9794b3c
+45	2025	7682682034068725	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	211c3b7a30d1b9e0
+13	2095	7682682034929113	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	498303b0d1690ddd
+24	2305	7682682037014861	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	ecaf3d38efd0ebf1
+7	2463	7682682038588854	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9c1369ca37482325
+2463	2679	7682682041137094	D:/Unity/VR/Immerza/Exposure Therapy/_Standard-Template/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/es3o1r1r/obj/arm64-v8a/libgame.so	cf53b18b088e5051
