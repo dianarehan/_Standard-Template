@@ -1,12 +1,11 @@
 local CS = CS
 local UnityEngine = CS.UnityEngine
-local Random = UnityEngine.Random
 local Time = UnityEngine.Time
 
 local minIntensity = 0.5
-local maxIntensity = 4.0
-local minInterval = 4.0
-local maxInterval = 8.0
+local maxIntensity = 10.0
+local minInterval = 7.0
+local maxInterval = 15.0
 
 local flickeringLight = nil
 local audioSource = nil
@@ -14,6 +13,10 @@ local nextFlickerTime = 0.0
 local flickerEndTime = 0.0
 local isFlickering = false
 local flickerDuration = 0.7
+
+function calculateValue(base, range, factor)
+    return base + range * math.abs(math.sin(Time.time * factor))
+end
 
 function awake()
     flickeringLight = gameObject:GetComponent(typeof(UnityEngine.Light))
@@ -23,7 +26,7 @@ function awake()
         flickeringLight.intensity = maxIntensity
     end
 
-    nextFlickerTime = Time.time + Random.Range(minInterval, maxInterval)
+    nextFlickerTime = Time.time + calculateValue(minInterval, maxInterval - minInterval, 0.1)
 end
 
 function update()
@@ -31,14 +34,15 @@ function update()
 
     if not isFlickering and currentTime >= nextFlickerTime then
         isFlickering = true
-        flickerDuration = Random.Range(0.1, 1.0)
+        flickerDuration = calculateValue(0.1, 0.9, 0.2)
         flickerEndTime = currentTime + flickerDuration
     end
 
     if isFlickering then
         if currentTime < flickerEndTime then
             if flickeringLight then
-                flickeringLight.intensity = Random.Range(minIntensity, maxIntensity)
+                local flickerFactor = math.random(5, 15) * 0.1
+                flickeringLight.intensity = calculateValue(minIntensity, maxIntensity - minIntensity, flickerFactor)
             end
             if audioSource and flickerSound then
                 audioSource:PlayOneShot(flickerSound)
@@ -51,7 +55,7 @@ function update()
             if flickeringLight then
                 flickeringLight.intensity = maxIntensity
             end
-            nextFlickerTime = currentTime + Random.Range(minInterval, maxInterval)
+            nextFlickerTime = currentTime + calculateValue(minInterval, maxInterval - minInterval, 0.1)
         end
     end
 end

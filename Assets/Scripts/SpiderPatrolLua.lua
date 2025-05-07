@@ -20,7 +20,7 @@ function start()
     end
 
     agent.stoppingDistance = 0.5
-    agent.speed = 0.2
+    -- agent.speed = 0.2
 
     -- Generate patrol points with a center point as reference
     local center = UnityEngine.Vector3(-1.644, -8.600791, 17.1121)
