@@ -30468,9 +30468,7 @@ MonoBehaviour:
   mainLuaScript: {fileID: -8750892213977659645, guid: b6bf975d33401cf49803711759332509, type: 3}
   additionalLuaScripts: []
   references:
-  - variableName: metalCreakClip1
-    value: {fileID: 8300000, guid: efc9ac4ec2488e244b9f75f0ba317de8, type: 3}
-  - variableName: metalCreakClip2
+  - variableName: metalCreakClip
     value: {fileID: 8300000, guid: 402cb4c486654e441b5ccbda48624fa7, type: 3}
 --- !u!82 &997751737
 AudioSource:
@@ -53367,7 +53365,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.372
+  m_Volume: 0.281
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -53411,7 +53409,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.341
+      value: 0.59
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -53466,9 +53464,7 @@ MonoBehaviour:
   mainLuaScript: {fileID: -8750892213977659645, guid: b6bf975d33401cf49803711759332509, type: 3}
   additionalLuaScripts: []
   references:
-  - variableName: metalCreakClip1
-    value: {fileID: 8300000, guid: efc9ac4ec2488e244b9f75f0ba317de8, type: 3}
-  - variableName: metalCreakClip2
+  - variableName: metalCreakClip
     value: {fileID: 8300000, guid: 402cb4c486654e441b5ccbda48624fa7, type: 3}
 --- !u!65 &1811856276
 BoxCollider:
@@ -55458,7 +55454,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.372
+  m_Volume: 0.326
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -55502,7 +55498,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.341
+      value: 0.469
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -55557,10 +55553,8 @@ MonoBehaviour:
   mainLuaScript: {fileID: -8750892213977659645, guid: b6bf975d33401cf49803711759332509, type: 3}
   additionalLuaScripts: []
   references:
-  - variableName: metalCreakClip1
+  - variableName: metalCreakClip
     value: {fileID: 8300000, guid: efc9ac4ec2488e244b9f75f0ba317de8, type: 3}
-  - variableName: metalCreakClip2
-    value: {fileID: 8300000, guid: 402cb4c486654e441b5ccbda48624fa7, type: 3}
 --- !u!65 &1900272746
 BoxCollider:
   m_ObjectHideFlags: 0

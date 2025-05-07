@@ -34,11 +34,13 @@ end
 
 function update()
     if isPlayerOnBoard and Time.time >= nextCreakTime then
-            local selectedClip = Random.Range(0, 2) == 0 and metalCreakClip1 or metalCreakClip2
-            if selectedClip ~= nil then
-                audioSource:PlayOneShot(selectedClip)
+        if audioSource and metalCreakClip then
+            if not audioSource.isPlaying then
+                audioSource:PlayOneShot(metalCreakClip)
                 print(" sound played")
             end
+        end
+    
         schedule_next_creak()
     end
 end
