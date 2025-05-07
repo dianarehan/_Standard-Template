@@ -519,7 +519,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.006
+  m_Volume: 0.004
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11199,7 +11199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031147495, guid: abc00000000001098851031487966933, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.766
+      value: 0.707
       objectReference: {fileID: 0}
     - target: {fileID: 1031147495, guid: abc00000000001098851031487966933, type: 3}
       propertyPath: m_LocalPosition.z

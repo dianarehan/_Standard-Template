@@ -4,7 +4,7 @@ local Time = UnityEngine.Time
 
 local minIntensity = 0.5
 local maxIntensity = 7.0
-local minInterval = 7.0
+local minInterval = 9.0
 local maxInterval = 15.0
 
 local flickeringLight = nil
