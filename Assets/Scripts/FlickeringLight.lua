@@ -3,7 +3,7 @@ local UnityEngine = CS.UnityEngine
 local Time = UnityEngine.Time
 
 local minIntensity = 0.5
-local maxIntensity = 10.0
+local maxIntensity = 7.0
 local minInterval = 7.0
 local maxInterval = 15.0
 
